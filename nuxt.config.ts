@@ -166,8 +166,8 @@ export default defineNuxtConfig({
       // our default translation server #76
       translateApi: '',
       // Use the instance where Elk has its Mastodon account as the default
-      defaultServer: 'm.webtoo.ls',
-      singleInstance: false,
+      defaultServer: 'community.xcelerator.co.in',
+      singleInstance: true,
     },
     storage: {
       fsBase: 'node_modules/.cache/app',
@@ -267,15 +267,13 @@ export default defineNuxtConfig({
       meta: [
         { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
         // open graph social image
-        { property: 'og:title', content: 'Elk' },
-        { property: 'og:description', content: 'A nimble Mastodon web client' },
+        { property: 'og:title', content: 'Community' },
+        { property: 'og:description', content: 'Community for all xcelerator users.' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://elk.zone/elk-og.png' },
-        { property: 'og:image:width', content: '3800' },
-        { property: 'og:image:height', content: '1900' },
-        { property: 'og:site_name', content: 'Elk' },
-        { name: 'twitter:site', content: '@elk_zone' },
-        { name: 'twitter:card', content: 'summary_large_image' },
+        { property: 'og:image', content: 'https://community-assets.xcelerator.co.in/meta-cover.jpg' },
+        { property: 'og:image:width', content: '500' },
+        { property: 'og:image:height', content: '250' },
+        { property: 'og:site_name', content: 'Community' },
       ],
     },
   },
